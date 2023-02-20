@@ -7,7 +7,14 @@ const assets = [
     "/src/style.css",
     "/src/script.js",
     "/images/icon-192.png",
-    "/images/icon-512.png"
+    "/images/icon-512.png",
+    "/pages/author.html",
+    "/pages/about.html",
+    "/pages/hebrew.html",
+    "/pages/kabbalah.html",
+    "/pages/solarcross.html",
+    "/pages/tarot.html",
+    "/pages/zodiac.html"
 ]
 self.addEventListener("install", evt => {
     self.skipWaiting();
