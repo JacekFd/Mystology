@@ -1,53 +1,21 @@
-<!--------------------------------------
-Relative (default) = ./
-Upp = ../
-Absolute = /
------------------------------------- -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- (A) "USUAL" TITLE CHARSET DESCRIPTION VIEWPORT -->
-    <title>Psyche</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
- 
-    <!-- (B) ICONS & PLATFORM SPECIFIC -->
-    <!-- (B1) GOOD OLD FAVICON -->
-    <link rel="icon" href="/images/icon-512.png" type="image/png">
- 
-    <!-- (B2) ANDROID/CHROME -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="white">
- 
-    <!-- (B3) IOS APP ICON + MOBILE SAFARI -->
-    <link rel="apple-touch-icon" href="/images/icon-512.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Hello World">
- 
-    <!-- (B4) WINDOWS -->
-    <meta name="msapplication-TileImage" content="/images/icon-512.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
- 
-    <!-- (C) WEB APP MANIFEST -->
-    <!-- https://web.dev/add-manifest/ -->
-    <link rel="manifest" href="/manifest.json">
- 
-    <!-- (D) SERVICE WORKER -->
-    <script>
-    if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/sw.js"); }
-    </script>
- 
-    <!-- (E) STYLESHEET + JAVASCRIPT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#eee">
+    <title>Mystology</title>
+    <script defer src="/src/script.js"></script>
     <link rel="stylesheet" href="/src/style.css">
-    <script defer src="script.js"></script>
-  </head>
-  <body>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/images/icon-192.png">
+</head>
+<body>
     <nav>
         <a href="/index.html">Home</a></li>
-        <a href="/page.html">Page</a> </li>
-     </nav>
-     <!---------------------------------------->
-     <h1>Page</h1>
+        <a href="/page.html">Page</a></li>
+    </nav>
+    <h1>Page</h1>
 </body>
 </html>
