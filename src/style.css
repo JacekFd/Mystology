@@ -26,5 +26,5 @@ a {
     padding: 0.25rem;
 }
 col tr {
-    display: inline;
+    flow: left;
 }
