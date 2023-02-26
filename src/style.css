@@ -11,20 +11,38 @@ nav>ul>li>a
 * {
     margin: 0;
 }
+#box {
+    margin: 12px;
+    padding: 12px;
+    border: solid 6px black;
+    border-radius: 20px;
+}
 h1 {
     text-align: center;
 }
 nav {
     background-color: #eee;
-    padding: 0.5rem;
+    padding-bottom: 0.125rem;
+}
+#add {
+    float: right;
+}
+div .col {
+    display: inline-block;
 }
 a {
-    outline-style: auto;
-    outline-color: black;
+    border: solid 3px black;
+    border-radius: 6px;
     color: black;
     background-color: #fff;
     padding: 0.25rem;
 }
-col tr {
-    flow: left;
+ul {
+    list-style: none;
 }
+li {
+    margin-bottom: 1rem;
+}
+col tr {
+    float: left;
+};
