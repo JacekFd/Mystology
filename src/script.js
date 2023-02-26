@@ -7,6 +7,7 @@ if ("serviceWorker" in navigator) {
       console.log(error);
     });
 }
+
 const nav = `
     <ul>
         <li><a href="/index.html">Home</a></li>

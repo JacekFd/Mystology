@@ -16,6 +16,7 @@ nav>ul>li>a
     padding: 12px;
     border: solid 6px black;
     border-radius: 20px;
+    height: 1440px;
 }
 h1 {
     text-align: center;
