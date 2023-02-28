@@ -4,6 +4,13 @@
 h1 {
     text-align: center;
 }
+a {
+    border: solid 3px black;
+    border-radius: 6px;
+    color: black;
+    background-color: #fff;
+    padding: 0.25rem;
+}
 @media (orientation:portrait){
     main {
         margin: 12px;
@@ -15,10 +22,12 @@ h1 {
     nav {
         background-color: #eee;
         width: 100%;
-        padding: 6px;
+        padding-bottom: 6px;
+        padding-top: 6px;
         position: absolute;
         bottom:0;
-        direction: rtl;
+        direction:rtl;
+        box-sizing: border-box;
     }
 }
 @media (orientation:landscape){
@@ -35,11 +44,4 @@ h1 {
         float: left;
         display: grid;
     }
-}
-a {
-    border: solid 3px black;
-    border-radius: 6px;
-    color: black;
-    background-color: #fff;
-    padding: 0.25rem;
 }
