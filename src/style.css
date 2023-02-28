@@ -1,35 +1,40 @@
-/*  ------------------------------------
-* = select all
-rem = root font-size
-em = own font-size
-font-family: x, sans-serif?
-li/a properties?
-flex display?
-margin>border>padding
-nav>ul>li>a
-------------------------------------  */
 * {
     margin: 0;
-}
-#box {
-    margin: 12px;
-    padding: 12px;
-    border: solid 6px black;
-    border-radius: 20px;
-    height: 720px;
 }
 h1 {
     text-align: center;
 }
-nav {
-    background-color: #eee;
-    padding-bottom: 0.125rem;
+@media (orientation:portrait){
+    main {
+        margin: 12px;
+        padding: 12px;
+        border: solid 6px black;
+        border-radius: 20px;
+        float:left;
+    }
+    nav {
+        background-color: #eee;
+        width: 100%;
+        padding: 6px;
+        position: absolute;
+        bottom:0;
+        direction: rtl;
+    }
 }
-#add {
-    float: right;
-}
-div .col {
-    display: inline-block;
+@media (orientation:landscape){
+    main {
+        margin: 12px;
+        padding: 12px;
+        border: solid 6px black;
+        border-radius: 20px;
+        float:left;
+    }
+    nav {
+        background-color: #eee;
+        padding: 6px;
+        float: left;
+        display: grid;
+    }
 }
 a {
     border: solid 3px black;
@@ -38,12 +43,3 @@ a {
     background-color: #fff;
     padding: 0.25rem;
 }
-ul {
-    list-style: none;
-}
-li {
-    margin-bottom: 1rem;
-}
-col tr {
-    float: left;
-};
