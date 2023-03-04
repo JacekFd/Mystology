@@ -1,4 +1,5 @@
 :root {
+    font-size: 12pt;
     font-family: 'EB Garamond', serif;
     --bar-size: 10vh
 }
@@ -22,18 +23,16 @@ nav {
     display: flex;
     position: fixed;
 }
-body {
-    align-items: center;
-    justify-content: center;
-}
 main {
-    align-items: center;
-    justify-content: center;
     padding: 1.5rem;
     border-radius: 2rem;
     outline-offset: -1rem;
     outline-width: 0.5rem;
     outline-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 /* [<->] */
 @media (orientation:landscape){
@@ -51,7 +50,6 @@ main {
 /* [^] */
 @media (orientation:portrait){
     main {
-        margin-bottom: var(--bar-size);
         height: 83vh;
     }
     nav {
