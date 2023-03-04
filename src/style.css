@@ -2,7 +2,7 @@
 :root {
     font-size: 12pt;
     font-family: 'EB Garamond', serif;
-    --bar-size: 15vh
+    --bar-size: 5rem
 }
 * {
     margin: 0;
@@ -25,6 +25,7 @@ nav {
     position: fixed;
 }
 main {
+    min-height: 100%
     padding: 1.5rem;
     border-radius: 2rem;
     outline-offset: -1rem;
@@ -39,7 +40,7 @@ main {
 @media (orientation:landscape){
     main {
         margin-left: var(--bar-size);
-        height: 93vh;
+        min-height: 100vh;
     }
     nav {
         width: var(--bar-size);
@@ -51,7 +52,7 @@ main {
 /* [^] */
 @media (orientation:portrait){
     main {
-        height: 77.5vh;
+        min-height: calc(100vh - var(--bar-size));
     }
     nav {
         width: 100vw;
