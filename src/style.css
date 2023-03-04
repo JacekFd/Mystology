@@ -2,7 +2,7 @@
 :root {
     font-size: 12pt;
     font-family: 'EB Garamond', serif;
-    --bar-size: 10vh
+    --bar-size: 15vh
 }
 * {
     margin: 0;
@@ -51,7 +51,7 @@ main {
 /* [^] */
 @media (orientation:portrait){
     main {
-        height: 83vh;
+        height: 77.5vh;
     }
     nav {
         width: 100vw;
