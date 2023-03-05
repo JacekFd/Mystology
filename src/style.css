@@ -68,7 +68,7 @@ nav {
     }
     nav {
         width: var(--bar-size);
-        min-height: 360px;
+        min-height: 384px;
     }
     nav div {
         display: flex;
