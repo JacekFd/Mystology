@@ -41,8 +41,6 @@ figure {
     margin: 1.5rem;
     display: flex;
     flex-direction: row;
-
-
     flex: 1;
 }
 main div {
@@ -52,11 +50,10 @@ main div {
 }
 /* ------------------------------------ */
 nav {
-    background-color: #eee;
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 /* ------------------------------------
     ________
@@ -66,11 +63,12 @@ nav {
 @media (orientation:landscape){
     main {
         margin-left: var(--bar-size);
-        /* height: 100vh; */
+        min-height: 360px;
+        flex: 1;
     }
     nav {
         width: var(--bar-size);
-        height: 100vh;
+        min-height: 360px;
     }
     nav div {
         display: flex;
@@ -83,9 +81,6 @@ nav {
     |^ |
 */
 @media (orientation:portrait){
-    main {
-        /* height: calc(100vh - var(--bar-size)); */
-    }
     nav {
         width: 100%;
         height: var(--bar-size);
