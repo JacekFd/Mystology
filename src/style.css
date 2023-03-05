@@ -2,7 +2,7 @@
 :root {
     font-size: 12pt;
     font-family: 'EB Garamond', 'Noto Serif Hebrew', 'Noto Sans Symbols', 'Noto Emoji', serif;
-    --bar-size: 6rem
+    --bar-size: 8rem
 }
 body {
     margin: 0;
