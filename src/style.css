@@ -63,7 +63,7 @@ nav {
 @media (orientation:landscape){
     main {
         margin-left: var(--bar-size);
-        min-height: 360px;
+        min-height: 384px;
         flex: 1;
     }
     nav {
