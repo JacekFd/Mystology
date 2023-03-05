@@ -11,9 +11,6 @@ body {
 h1 {
     font-size: 4rem
 }
-p {
-
-}
 a {
     font-weight: bold;
     border: solid 3px black;
@@ -23,29 +20,33 @@ a {
     padding: 0.25rem;
     margin: 0.125rem;
 }
-figure {
-    display: flex;
-    flex-direction: row;
-}
 article {
-    
+    margin: 1.5rem;
+    text-align: center;
+
 }
-/* ------------------------------------ */
 main {
     border-radius: 2rem;
     outline-offset: -1rem;
     outline-width: 0.5rem;
     outline-style: solid;
 
+    justify-content: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+}
+figure {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+
+    flex: 1;
 }
 main div {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    flex: 1;
 }
 /* ------------------------------------ */
 nav {
