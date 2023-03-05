@@ -6,20 +6,13 @@
 }
 body {
     margin: 0;
-
 }
+/* ------------------------------------ */
 h1 {
-    text-align: center;
-    font-size: 4rem;
+    font-size: 4rem
 }
 p {
-    text-align: center;
-}
-div {
-    display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
-    justify-content: space-evenly;
+
 }
 a {
     font-weight: bold;
@@ -28,25 +21,46 @@ a {
     color: black;
     background-color: #fff;
     padding: 0.25rem;
-
+    margin: 0.125rem;
 }
-nav {
-    background-color: #eee;
+figure {
     display: flex;
-    position: fixed;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
 }
+article {
+    
+}
+/* ------------------------------------ */
 main {
     border-radius: 2rem;
     outline-offset: -1rem;
     outline-width: 0.5rem;
     outline-style: solid;
+
     display: flex;
-    align-items: space-evenly;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main div {
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
-/* [<---->] */
+/* ------------------------------------ */
+nav {
+    background-color: #eee;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* ------------------------------------
+    ________
+    >>>>>>>>
+    --------
+*/
 @media (orientation:landscape){
     main {
         margin-left: var(--bar-size);
@@ -55,15 +69,17 @@ main {
     nav {
         width: var(--bar-size);
         height: 100vh;
-        align-items: center;
     }
     nav div {
+        display: flex;
         flex-direction: column;
     }
 }
-/* |^|
-   |^|
-   |^|  */
+/* ------------------------------------
+    |^ |
+    |^ |
+    |^ |
+*/
 @media (orientation:portrait){
     main {
         height: calc(100vh - var(--bar-size));
@@ -72,8 +88,9 @@ main {
         width: 100vw;
         height: var(--bar-size);
         bottom: 0;
+
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     nav div {
         flex-direction: row;
