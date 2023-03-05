@@ -18,6 +18,8 @@ p {
 div {
     display: flex;
     flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-evenly;
 }
 a {
     font-weight: bold;
@@ -26,12 +28,14 @@ a {
     color: black;
     background-color: #fff;
     padding: 0.25rem;
-    margin: 0.25rem;
+
 }
 nav {
     background-color: #eee;
     display: flex;
     position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
 }
 main {
     border-radius: 2rem;
@@ -39,11 +43,10 @@ main {
     outline-width: 0.5rem;
     outline-style: solid;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: space-evenly;
+    justify-content: space-evenly;
 }
-/* [<->] */
+/* [<---->] */
 @media (orientation:landscape){
     main {
         margin-left: var(--bar-size);
@@ -52,11 +55,15 @@ main {
     nav {
         width: var(--bar-size);
         height: 100vh;
-        flex-direction: column;
         align-items: center;
     }
+    nav div {
+        flex-direction: column;
+    }
 }
-/* [^] */
+/* |^|
+   |^|
+   |^|  */
 @media (orientation:portrait){
     main {
         height: calc(100vh - var(--bar-size));
@@ -67,5 +74,8 @@ main {
         bottom: 0;
         align-items: center;
         justify-content: center;
+    }
+    nav div {
+        flex-direction: row;
     }
 }
