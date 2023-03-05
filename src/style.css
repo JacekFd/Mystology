@@ -34,6 +34,7 @@ main {
     justify-content: center;
     display: flex;
     flex-direction: row;
+
 }
 figure {
     margin: 1.5rem;
@@ -65,11 +66,11 @@ nav {
 @media (orientation:landscape){
     main {
         margin-left: var(--bar-size);
-        height: 100vh;
+        height: 100%;
     }
     nav {
         width: var(--bar-size);
-        height: 100vh;
+        height: 100%;
     }
     nav div {
         display: flex;
@@ -83,10 +84,10 @@ nav {
 */
 @media (orientation:portrait){
     main {
-        height: calc(100vh - var(--bar-size));
+        height: calc(100% - var(--bar-size));
     }
     nav {
-        width: 100vw;
+        width: 100%;
         height: var(--bar-size);
         bottom: 0;
 
