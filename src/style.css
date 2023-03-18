@@ -96,19 +96,22 @@ nav {
 #box,
 #box1,
 #box2,
-#box3 {
+#box3,
+#box4 {
     opacity: 0;
 }
 #first,
 #second,
 #third,
-#fourth {
+#fourth,
+#fifth {
     opacity: 0;
 }
 #first:hover,
 #second:hover,
 #third:hover,
-#fourth:hover {
+#fourth:hover,
+#fifth:hover {
     opacity: 1;
 }
 #one,
@@ -124,31 +127,31 @@ nav {
 }
 
 #one {
-    transform-origin: 540px 240px;
+    transform-origin: 540px 180px;
 }
 #two {
-    transform-origin: 810px 390px;
+    transform-origin: 810px 330px;
 }
 #three {
-    transform-origin: 270px 390px;
+    transform-origin: 270px 330px;
 }
 #four {
-    transform-origin: 810px 690px;
+    transform-origin: 810px 630px;
 }
 #five {
-    transform-origin: 270px 690px;
+    transform-origin: 270px 630px;
 }
 #six {
-    transform-origin: 540px 840px;
+    transform-origin: 540px 780px;
 }
 #seven {
-    transform-origin: 810px 990px;
+    transform-origin: 810px 930px;
 }
 #eighth {
-    transform-origin: 270px 990px;
+    transform-origin: 270px 930px;
 }
 #nine {
-    transform-origin: 540px 1140px;
+    transform-origin: 540px 1080px;
 }
 #one:hover,
 #two:hover,
