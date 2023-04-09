@@ -119,6 +119,17 @@ nav {
         Transform: scale(1)
     }
 }
+@keyframes showup {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity:100
+    }
+    100% {
+        opacity:0
+    }
+}
 #box,
 #box1,
 #box2,
@@ -126,20 +137,17 @@ nav {
 #box4 {
     opacity: 0;
 }
+/* SHOWUP */
 #matter,
-#space,
 #time,
-#spirit,
 #chaos {
-    opacity: 0;
+    animation: showup 5s infinite
 }
-#matter:hover,
-#space:hover,
-#time:hover,
-#spirit:hover,
-#chaos:hover {
-    opacity: 1;
+#space,
+#spirit {
+    animation: showup 7s reverse infinite
 }
+/* ORIGINS */
 #one, #_1 {
     transform-origin: 540px 180px;
 }
@@ -185,23 +193,28 @@ nav {
 #active {
     transform-origin: 810px 120px;
 }
-#one:hover,
-#two:hover,
-#three:hover,
-#four:hover,
-#five:hover,
-#six:hover,
-#seven:hover,
-#eighth:hover,
-#nine:hover,
-#ten:hover,
-#twenty:hover,
-#_20:hover,
-#_00:hover,
-#_21:hover
+/* SHAKE */
+#one,
+#three,
+#five,
+#seven,
+#nine,
+#twenty,
+#_00
 {
-    animation: shake 0.5s
+    animation: shake 5s infinite
 }
+#two,
+#four,
+#six,
+#eighth,
+#ten,
+#_20,
+#_21
+{
+    animation: shake 7s reverse infinite
+}
+/* ZOOM */
 #_1:hover,
 #_2:hover,
 #_3:hover,
